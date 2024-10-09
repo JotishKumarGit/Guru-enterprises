@@ -45,9 +45,24 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 
+	<style>
+		.why-choose .choose-right {
+	height: 100%;
+	width: 100%;
+	background-image: url(img/surgical-bandage.jpg); 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+	</style>
+
 </head>
 
 <body>
+
+
+
 
 	<!-- Preloader -->
 	<div class="preloader">
@@ -65,111 +80,10 @@
 	</div>
 	<!-- End Preloader -->
 
-	<!-- Get Pro Button -->
-	<!-- <ul class="pro-features">
-		<a class="get-pro" href="#">Get Pro</a>
-		<li class="big-title">Pro Version Available on Themeforest</li>
-		<li class="title">Pro Version Features</li>
-		<li>2+ premade home pages</li>
-		<li>20+ html pages</li>
-		<li>Color Plate With 12+ Colors</li>
-		<li>Sticky Header / Sticky Filters</li>
-		<li>Working Contact Form With Google Map</li>
-		<div class="button">
-			<a href="http://preview.themeforest.net/item/mediplus-medical-and-doctor-html-template/full_screen_preview/26665910?_ga=2.145092285.888558928.1591971968-344530658.1588061879"
-				target="_blank" class="btn">Pro Version Demo</a>
-			<a href="https://themeforest.net/item/mediplus-medical-and-doctor-html-template/26665910" target="_blank"
-				class="btn">Buy Pro Version</a>
-		</div>
-	</ul> -->
 
-	<!-- Header Area -->
-	<header class="header">
-		<!-- Topbar -->
-		<div class="topbar">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-5 col-12">
-						<!-- Contact -->
-						<ul class="top-link">
-							<li><i class="fa fa-phone"></i> +91 9962935369</li>
-							<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">
-									guruenterprises.gp@gmail.com</a></li>
-						</ul>
-
-						<!-- End Contact -->
-					</div>
-					<div class="col-lg-6 col-md-7 col-12">
-						<!-- Top Contact -->
-						<ul class="top-contact">
-							<li><a href="#"><i class="icofont-facebook"></i></a></li>
-							<li><a href="#"><i class="icofont-google-plus"></i></a></li>
-							<li><a href="#"><i class="icofont-twitter"></i></a></li>
-							<li><a href="#"><i class="icofont-vimeo"></i></a></li>
-							<li><a href="#"><i class="icofont-pinterest"></i></a></li>
-						</ul>
-
-						<!-- End Top Contact -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End Topbar -->
-		<!-- Header Inner -->
-		<div class="header-inner">
-			<div class="container">
-				<div class="inner">
-					<div class="row">
-						<div class="col-lg-3 col-md-3 col-12">
-							<!-- Start Logo -->
-							<div class="logo ">
-								<a href="index.html"><img src="img/guru-logo.jpg" alt="#" height="20px"
-										width="70px"></a>
-							</div>
-							<!-- End Logo -->
-							<!-- Mobile Nav -->
-							<div class="mobile-nav"></div>
-							<!-- End Mobile Nav -->
-						</div>
-						<div class="col-lg-7 col-md-9 col-12">
-							<!-- Main Menu -->
-							<div class="main-menu">
-								<nav class="navigation">
-									<ul class="nav menu">
-										<li class="active"><a href="#">Home <i class="icofont-rounded-down"></i></a>
-											<ul class="dropdown">
-												<li><a href="index.html">Home Page 1</a></li>
-											</ul>
-										</li>
-										<li><a href="#">About </a></li>
-										<li><a href="#">Products </a></li>
-										<li><a href="#">Services </a></li>
-
-										<li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
-											<ul class="dropdown">
-												<li><a href="blog-single.html">Blog Details</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Contact Us</a></li>
-									</ul>
-								</nav>
-							</div>
-							<!--/ End Main Menu -->
-						</div>
-						<div class="col-lg-2 col-12">
-							<div class="get-quote">
-								<a href="appointment.html" class="btn">Book Appointment</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End Header Inner -->
-	</header>
-	<!-- End Header Area -->
-
-
+	<?php
+	include('header.php');
+	?>
 
 
 
@@ -354,7 +268,7 @@
 
 						</div>
 						<div class="mt-5 b-btn">
-							<a href="" class="px-4 py-2 mt-3 "
+							<a href="about.php" class="px-4 py-2 mt-3 "
 								style="border: 1px solid greenyellow; border-radius: 20px;">Read More</a>
 						</div>
 					</div>
@@ -521,8 +435,8 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">Surgeon Gown</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
-							<a href="#" class="btn btn-primary text-white">Details</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
+							<a href="surgeon-gown.php" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
 				</div>
@@ -533,9 +447,8 @@
 							style="object-fit: cover; border: 1px solid grey;">
 						<div class="card-body text-center">
 							<h5 class="card-title">Surgical bandage products</h5>
-
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
-							<a href="#" class="btn btn-primary text-white">Details</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
+							<a href="" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
 				</div>
@@ -551,7 +464,7 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">Patient Gown</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -564,7 +477,7 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">Bed Sheet</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -576,8 +489,7 @@
 							style="object-fit: cover; border: 1px solid grey;">
 						<div class="card-body text-center">
 							<h5 class="card-title">Under Pad</h5>
-
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -590,7 +502,7 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">Gamjee Roll</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -603,7 +515,7 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">Soft Roll</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -616,7 +528,7 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">Roller Bandage</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -629,7 +541,7 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">Elastic Bandage Roll</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -641,8 +553,7 @@
 							style="object-fit: cover; border: 1px solid grey;">
 						<div class="card-body text-center">
 							<h5 class="card-title">Absorbent Surgical Cotton</h5>
-
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -655,7 +566,7 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">3Ply Mask</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -668,7 +579,7 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">Mopping Pad</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -681,7 +592,7 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">N95 Mask</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -694,7 +605,7 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">Gauze Swabs</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -707,7 +618,7 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">PPE Kit</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
@@ -720,13 +631,12 @@
 						<div class="card-body text-center">
 							<h5 class="card-title">Dressing Pad</h5>
 
-							<a href="#" class="btn btn-primary text-white">Enquiry</a>
+							<a href="" type="button" class="btn btn-primary text-white" data-toggle="modal" data-target="#exampleModal">Enquiry</a>
 							<a href="#" class="btn btn-primary text-white">Details</a>
 						</div>
 					</div>
 				</div>
 				<!--  -->
-
 			</div>
 		</div>
 	</section>
@@ -745,8 +655,8 @@
 							Guru Enterprises, we’re here to help you recognize the signs that require immediate
 							attention, ensuring you get the care you need, when you need it.</p>
 						<div class="button">
-							<a href="#" class="btn">Contact Now</a>
-							<a href="#" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>
+							<a href="contact.php" class="btn">Contact Now</a>
+							<a href="service.php" class="btn second">Learn More<i class="fa fa-long-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -779,35 +689,35 @@
 					<div class="owl-carousel portfolio-slider">
 						<div class="single-pf">
 							<img src="img/pf1.jpg" alt="#">
-							<a href="portfolio-details.html" class="btn">View Details</a>
+							<a href="contact.php" class="btn">View Details</a>
 						</div>
 						<div class="single-pf">
 							<img src="img/pf2.jpg" alt="#">
-							<a href="portfolio-details.html" class="btn">View Details</a>
+							<a href="contact.php" class="btn">View Details</a>
 						</div>
 						<div class="single-pf">
 							<img src="img/pf3.jpg" alt="#">
-							<a href="portfolio-details.html" class="btn">View Details</a>
+							<a href="contact.php" class="btn">View Details</a>
 						</div>
 						<div class="single-pf">
 							<img src="img/pf4.jpg" alt="#">
-							<a href="portfolio-details.html" class="btn">View Details</a>
+							<a href="contact.php" class="btn">View Details</a>
 						</div>
 						<div class="single-pf">
 							<img src="img/pf1.jpg" alt="#">
-							<a href="portfolio-details.html" class="btn">View Details</a>
+							<a href="contact.php" class="btn">View Details</a>
 						</div>
 						<div class="single-pf">
 							<img src="img/pf2.jpg" alt="#">
-							<a href="portfolio-details.html" class="btn">View Details</a>
+							<a href="contact.php" class="btn">View Details</a>
 						</div>
 						<div class="single-pf">
 							<img src="img/pf3.jpg" alt="#">
-							<a href="portfolio-details.html" class="btn">View Details</a>
+							<a href="contact.php" class="btn">View Details</a>
 						</div>
 						<div class="single-pf">
 							<img src="img/pf4.jpg" alt="#">
-							<a href="portfolio-details.html" class="btn">View Details</a>
+							<a href="contact.php" class="btn">View Details</a>
 						</div>
 					</div>
 				</div>
@@ -838,7 +748,7 @@
 					<!-- Start Single Service -->
 					<div class="single-service h-100  py-5 image-effect">
 						<i class="icofont icofont-prescription " style="padding-left: 10px;"></i>
-						<h4><a href="" >General Treatment</a></h4>
+						<h4><a href="">General Treatment</a></h4>
 						<p class="w-75">At Guru Enterprises, we provide comprehensive general treatment services
 							designed to address
 							a wide range of health concerns for patients of all ages. Our experienced team of healthcare
@@ -1061,23 +971,23 @@
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
-									<input name="name" type="text" placeholder="Name">
+									<input name="name" class="name" type="text" placeholder="Name">
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
-									<input name="email" type="email" placeholder="Email">
+									<input name="email" class="email" type="email" placeholder="Email">
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
-									<input name="phone" type="text" placeholder="Phone">
+									<input name="phone" class="phone" type="text" placeholder="Phone">
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
 									<div class="nice-select form-control wide" tabindex="0"><span
-											class="current">Department</span>
+											class="current department " >Department</span>
 										<ul class="list">
 											<li data-value="1" class="option selected ">Department</li>
 											<li data-value="2" class="option">Cardiac Clinic</li>
@@ -1091,7 +1001,7 @@
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
 									<div class="nice-select form-control wide" tabindex="0"><span
-											class="current">Doctor</span>
+											class="current doctor">Doctor</span>
 										<ul class="list">
 											<li data-value="1" class="option selected ">Doctor</li>
 											<li data-value="2" class="option">Dr. Akther Hossain</li>
@@ -1103,12 +1013,12 @@
 							</div>
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
-									<input type="text" placeholder="Date" id="datepicker">
+									<input type="text" class="date" placeholder="Date" id="datepicker">
 								</div>
 							</div>
 							<div class="col-lg-12 col-md-12 col-12">
 								<div class="form-group">
-									<textarea name="message" placeholder="Write Your Message Here....."></textarea>
+									<textarea name="message" class="message" placeholder="Write Your Message Here....."></textarea>
 								</div>
 							</div>
 						</div>
@@ -1116,7 +1026,7 @@
 							<div class="col-lg-5 col-md-4 col-12">
 								<div class="form-group">
 									<div class="button">
-										<button type="submit" class="btn">Book An Appointment</button>
+										<button type="button" class="btn" onclick="contact()">Book An Appointment</button>
 									</div>
 								</div>
 							</div>
@@ -1136,166 +1046,10 @@
 	</section>
 	<!-- End Appointment -->
 
-	<!-- Start Newsletter Area -->
-	<section class="newsletter section">
-		<div class="container">
-			<div class="row ">
-				<div class="col-lg-6  col-12">
-					<!-- Start Newsletter Form -->
-					<div class="subscribe-text ">
-						<h6>Sign up for newsletter</h6>
-						<p class="">Stay informed and connected with Guru Enterprises! By signing up for our newsletter,
-							you’ll receive the latest news, updates, and health tips directly in your inbox.</p>
-					</div>
-					<!-- End Newsletter Form -->
-				</div>
-				<div class="col-lg-6  col-12">
-					<!-- Start Newsletter Form -->
-					<div class="subscribe-form ">
-						<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-							<input name="EMAIL" placeholder="Your email address" class="common-input"
-								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
-								required="" type="email">
-							<button class="btn">Subscribe</button>
-						</form>
-					</div>
-					<!-- End Newsletter Form -->
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- /End Newsletter Area -->
 
-	<!-- Footer Area -->
-	<footer id="footer" class="footer ">
-		<!-- Footer Top -->
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-6 col-12">
-						<div class="single-footer">
-							<h2>Guru Enterprises</h2>
-							<p>At Guru Enterprises, we are committed to providing innovative solutions and high-quality
-								products that enhance the well-being of individuals and businesses alike. With a strong
-								focus on customer satisfaction and industry expertise.</p>
-							<!-- Social -->
-							<ul class="social">
-								<li><a href="#"><i class="icofont-facebook"></i></a></li>
-								<li><a href="#"><i class="icofont-google-plus"></i></a></li>
-								<li><a href="#"><i class="icofont-twitter"></i></a></li>
-								<li><a href="#"><i class="icofont-vimeo"></i></a></li>
-								<li><a href="#"><i class="icofont-pinterest"></i></a></li>
-							</ul>
-							<!-- End Social -->
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-6 col-12">
-						<div class="single-footer f-link ">
-							<h2 class="">Quick Links</h2>
-							<div class="row ">
-								<div class="col-lg-6 col-md-6 col-12">
-									<ul>
-										<li><a href="#">Home</a>
-										</li>
-										<li><a href="#">About</a>
-										</li>
-										<li><a href="#">Products</a></li>
-										<li><a href="#">Services</a>
-										</li>
 
-										<li><a href="#">Contact
-											</a></li>
-									</ul>
-								</div>
 
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer">
-							<h2>Open Hours</h2>
-							<p>At Guru Enterprises, we are here to serve you! Our hours of operation are designed to
-								provide flexibility and convenience for all our customers.</p>
-							<ul class="time-sidual">
-								<li class="day">Monday - Sunday <span>9.00-6.00</span></li>
-								
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer">
-							<h2>Newsletter</h2>
-							<p>Stay connected with Guru Enterprises and keep up to date with the latest news,
-								health tips, and exclusive offers by subscribing to our newsletter!</p>
-							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-								<input name="email" placeholder="Email Address" class="common-input"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
-									required="" type="email">
-								<button class="button"><i class="icofont icofont-paper-plane"></i></button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End Footer Top -->
-		<!-- Copyright -->
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-12">
-						<div class="copyright-content">
-							<p>Guru Enterprises © Copyright 2019 | All Rights Reserved Design by <a
-									href="https://web2export.com/" target="_blank">Web2Export</a> </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ End Copyright -->
-	</footer>
-	<!--/ End Footer Area -->
 
-	<!-- jquery Min JS -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jquery Migrate JS -->
-	<script src="js/jquery-migrate-3.0.0.js"></script>
-	<!-- jquery Ui JS -->
-	<script src="js/jquery-ui.min.js"></script>
-	<!-- Easing JS -->
-	<script src="js/easing.js"></script>
-	<!-- Color JS -->
-	<script src="js/colors.js"></script>
-	<!-- Popper JS -->
-	<script src="js/popper.min.js"></script>
-	<!-- Bootstrap Datepicker JS -->
-	<script src="js/bootstrap-datepicker.js"></script>
-	<!-- Jquery Nav JS -->
-	<script src="js/jquery.nav.js"></script>
-	<!-- Slicknav JS -->
-	<script src="js/slicknav.min.js"></script>
-	<!-- ScrollUp JS -->
-	<script src="js/jquery.scrollUp.min.js"></script>
-	<!-- Niceselect JS -->
-	<script src="js/niceselect.js"></script>
-	<!-- Tilt Jquery JS -->
-	<script src="js/tilt.jquery.min.js"></script>
-	<!-- Owl Carousel JS -->
-	<script src="js/owl-carousel.js"></script>
-	<!-- counterup JS -->
-	<script src="js/jquery.counterup.min.js"></script>
-	<!-- Steller JS -->
-	<script src="js/steller.js"></script>
-	<!-- Wow JS -->
-	<script src="js/wow.min.js"></script>
-	<!-- Magnific Popup JS -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<!-- Counter Up CDN JS -->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-	<!-- Bootstrap JS -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Main JS -->
-	<script src="js/main.js"></script>
-</body>
-
-</html>
+	<?php
+	include('footer.php');
+	?>
